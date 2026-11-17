@@ -1,14 +1,19 @@
-html, body, footer
-{
+
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     min-height: 100%;
 }
 
-#Poster{
-     width: 100%;
+main {
+    width: 100%;
     height: 100vh;
-    object-fit: fill;
-    display: block;
+
+    background-image: url("../img/editedPoster.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
