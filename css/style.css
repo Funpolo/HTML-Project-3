@@ -11,9 +11,15 @@ main {
     height: 100vh;
 
     background-image: url("../img/editedPoster.png");
-    background-size: 100% 100%;
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
 
+#mainTitle{
+    color: aqua;
+   text-align: center;
+   position: relative;
+   top: 50%; 
+}
