@@ -10,9 +10,13 @@
 }
 
 main {
+    /* Setting up the backgrounf for the website */
+    /* position: relative; would let me shift the background around if needed and center it without effecting anything else */
+    /* the reaosn I used vh for height is so it covers the full page */
+    /* no repeat made it so the background doesn't copy and paste itself over and over */
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-image: url("../img/editedPoster.png");
     background-color: black;
     background-position: center;
@@ -22,7 +26,6 @@ main {
 .mainPosterText {
     /* I worked from bottom to top for my comments so the commetns from the .bulktext for the flex things are the same here*/
     /* the only difference is that rather than the text being on the right I just centered it */
-    /*  */
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -34,14 +37,15 @@ main {
     /* Just styling the main title of the poster */
     font-family: Butcherman, sans-serif;
     font-size: 120px;
-    color: red;
-    
+    color: rgb(142, 22, 4);
+    text-shadow: 3px 5px oklch(0% 0 0)  ;
 }
 
 h1 a {
     /* removing the hyperlink effect from the main title while keeping it working */
     text-decoration: none;
-    color: red;
+    color: rgb(142, 22, 4);
+    
 }
 
 .mainPosterText p {
@@ -49,7 +53,7 @@ h1 a {
     text-transform: uppercase;
     font-family:Anton, sans-serif;
     font-size: 30px;
-    color: white    ;
+    color: rgb(202, 202, 200);
     margin: 5px 0 0 0;
 }
 
@@ -69,13 +73,20 @@ h1 a {
     flex-direction: column; 
     justify-content: right;
     position: absolute;
-    bottom: 10px;
-    right: 25rem;
+    bottom: 3vw;
+    right: 21vw;
     text-align: right;
     
+    width: auto;
 }
 
 .bulkText h2{
     /* just putting the color white on the h2 element */
-    color: white;
+    color: rgb(202, 202, 200);
+    text-shadow: 2px 2px black;
+
+}
+.bulkText > p{
+    text-shadow: 2px 2px black;
+
 }
