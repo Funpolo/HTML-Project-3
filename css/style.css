@@ -2,8 +2,11 @@
 *{
     margin: 0;
     padding: 0;
-    
-    box-sizing: border-box;
+    /* My udnerstanding for this is that when using for elements, it will set the padding or border of it PLUS the content to a set amount */
+    /* in this case I used it because the bottom text wasn't willing to go down at the bottom right and that was the only way I was able to drop it */
+    /* I am sure there is something I can fix in my flexbox that would help but I am not sure */
+    /* Google helped me find this slotuion */
+    box-sizing: border-box; 
 }
 
 main {
@@ -17,50 +20,62 @@ main {
     
 }
 .mainPosterText {
+    /* I worked from bottom to top for my comments so the commetns from the .bulktext for the flex things are the same here*/
+    /* the only difference is that rather than the text being on the right I just centered it */
+    /*  */
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-    align-items: center;
     text-align: center;
-    min-height: 100vh; 
+    height: 100%; 
 }
 
 .mainPosterText h1 {
+    /* Just styling the main title of the poster */
     font-family: Butcherman, sans-serif;
     font-size: 120px;
     color: red;
-    margin: 0;
+    
 }
 
 h1 a {
+    /* removing the hyperlink effect from the main title while keeping it working */
     text-decoration: none;
     color: red;
 }
 
 .mainPosterText p {
-    font-family: Anton, sans-serif;
+    /* same thing as above just setting up the text right under the title */
+    text-transform: uppercase;
+    font-family:Anton, sans-serif;
     font-size: 30px;
     color: white    ;
     margin: 5px 0 0 0;
 }
 
 .bulkText{
+    /* so here is where I think most of my issues come from but I will explain each line to the best of my abiltiy */
+    /* line 57-59 just deals with the styling of the font */
+    /* line 62-72 are dealing with the postion of the text */
+    /* I used flexbox because I felt it would be the best since I set up the <p> elemets to be in rows and colums*/
+    /* justify-content: right; makes it so the text is packed on the right and doesn't change the direction of the text which what I wanted */
+    /* I needed the position: absolute; because from my udnerstanding if I wanted the text to overlap over the img I would need to use it, because absolute ignores other elements and puts the targeted elements there no matter what*/
+    /* right and bottom are just used for me to adjust the postion of the text*/
+    /* and text align is what changes the direction of the text so it flows on the right rather than left or center*/
+    text-transform: uppercase;
     font-family: Anton, sans-serif;
     color: gray;
     display: flex;
     flex-direction: column; 
     justify-content: right;
-    align-items: right;
-    text-align: right; 
     position: absolute;
     bottom: 10px;
-    right: 15rem;
+    right: 25rem;
     text-align: right;
-
-    width: auto;
-    min-height: 0;
+    
 }
 
 .bulkText h2{
+    /* just putting the color white on the h2 element */
     color: white;
 }
