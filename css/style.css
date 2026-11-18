@@ -1,6 +1,6 @@
 
-html, body {
-    margin: 0;
+*{
+ margin: 0;
     padding: 0;
     width: 100%;
     min-height: 100%;
@@ -9,17 +9,39 @@ html, body {
 main {
     width: 100%;
     height: 100vh;
-
     background-image: url("../img/editedPoster.png");
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    
+
+    
+}
+.mainPosterText {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Ensures multi-line text stays centered */
+    min-height: 100vh; /* Optional: makes container full screen height */
 }
 
-#mainTitle{
-    color: aqua;
-   text-align: center;
-   position: relative;
-   top: 50%; 
+.mainPosterText h1 {
+    color: red;
+    margin: 0;
+}
+
+.mainPosterText p {
+    color: white    ;
+    margin: 5px 0 0 0;
+}
+
+.bulkText{
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: right; /* Centers vertically */
+    align-items: right; /* Centers horizontally */
+    text-align: right; /* Ensures multi-line text stays centered */
+    min-height: 100vh; /* Optional: makes container full screen height */
+
 }

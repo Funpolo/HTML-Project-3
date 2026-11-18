@@ -17,7 +17,7 @@
     <!--Font for the "IRON LUNG" part of the poster-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bitcount+Ink:wght@100..900&family=Butcherman&family=Creepster&family=Eater&display=swap" rel="stylesheet">
 
     <!--Font for the rest of the text in the poster-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,11 +27,32 @@
 
     <!--I have not found a proper use for the <header> element for this project so therefore I have skipped it because most of the work will be done in the <main> element-->
 <body>
-    <!--We are gonna put the main text "iron lung" and "Only in Theaters..." in one section by themselves-->
-    <!-- And the "A flim by ... " and the text below it will be in one section-->
-    <!-- The "A flim ..." will be marked using the <mark> element to make it look bigger than the text below it-->
+    <!--We are gonna put the main text "iron lung" and "Only in Theaters..." in one div by themselves-->
+    <!-- And the "A flim by ... " and the text below it will be in one div-->
+     <!-- The reason I am using divs in this case because I was unable to find a proper way to do this without needing to do extra steps -->
     <main>
-        <h1 id="mainTitle"> Iron Lung</h1>
+        <!-- First Div -->
+        <div class="mainPosterText">
+            <h1>IRON LUNG</h1>
+            <p>Only in Theaters January 30</p>
+        </div>
+
+        <!-- Second Div -->
+        <!-- Because this div is going to be mostly one bold text and a wall of text, we will use a h2 and then normal text after -->
+        <div class="bulkText">
+            <h2>A flim by Markiplier</h2>
+            <!-- The text below is what I was able to make out from the OG poster, I did use AI to help me with that -->
+            <p>WRITTEN, EDITED AND EXECUTIVE PRODUCED BY MARK FISCHBACH</p>
+            <p>DIRECTOR OF PHOTOGRAPHY PHILIP ROY</p>
+            <p>SOUND DESIGNER BRAD ENGLEN</p>
+            <p>MUSIC BY ANDREW HULSHULT</p>
+            <p>PRODUCTION DESIGNER IMAN CORBANI</p>
+            <p>HAIR AND MAKEUP ANNA FUGATE-DOWNS</p>
+            <p>COSTUME DESIGNER ERIKA SLAY</p>
+            <p>STILL PHOTOGRAPHY WES MEYERS</p>
+            <p>VISUAL EFFECTS</p>
+
+        </div>
     </main>
 </body>
 
