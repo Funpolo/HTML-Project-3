@@ -1,12 +1,13 @@
 
 *{
- margin: 0;
+    margin: 0;
     padding: 0;
-    width: 100%;
-    min-height: 100%;
+    
+    box-sizing: border-box;
 }
 
 main {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-image: url("../img/editedPoster.png");
@@ -14,34 +15,52 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     
-
-    
 }
 .mainPosterText {
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers vertically */
-    align-items: center; /* Centers horizontally */
-    text-align: center; /* Ensures multi-line text stays centered */
-    min-height: 100vh; /* Optional: makes container full screen height */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; 
 }
 
 .mainPosterText h1 {
+    font-family: Butcherman, sans-serif;
+    font-size: 120px;
     color: red;
     margin: 0;
 }
 
+h1 a {
+    text-decoration: none;
+    color: red;
+}
+
 .mainPosterText p {
+    font-family: Anton, sans-serif;
+    font-size: 30px;
     color: white    ;
     margin: 5px 0 0 0;
 }
 
 .bulkText{
+    font-family: Anton, sans-serif;
+    color: gray;
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: right; /* Centers vertically */
-    align-items: right; /* Centers horizontally */
-    text-align: right; /* Ensures multi-line text stays centered */
-    min-height: 100vh; /* Optional: makes container full screen height */
+    flex-direction: column; 
+    justify-content: right;
+    align-items: right;
+    text-align: right; 
+    position: absolute;
+    bottom: 10px;
+    right: 15rem;
+    text-align: right;
 
+    width: auto;
+    min-height: 0;
+}
+
+.bulkText h2{
+    color: white;
 }
